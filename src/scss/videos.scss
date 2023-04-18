@@ -1,0 +1,108 @@
+.videos {
+  padding: 40px 0 ;
+  background: #fff;
+  position: relative;
+  .container {
+    &:before {
+      content: '';
+      display: inline-block;
+      max-width: 1140px;
+      background: #FFDD07;
+      height: 7px;
+      position: absolute;
+      top: 12%;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+  }
+  &-title {
+    text-align: center;
+    background: white;
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 800;
+    line-height: 1.5;
+    text-transform: inherit;
+  }
+  h2 {
+    font-family: Roboto, sans-serif !important;
+    font-size: 34px;
+    color: #262C40;
+    text-align: center;
+     }
+  &-videosSlider {
+    margin-top: 30px;
+    position: relative;
+    &__owl {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+    &__bgBox {
+      background-image: url(../img/videos/backgrey.png);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      z-index: -1;
+    }
+    .owl-carousel{
+      top: calc(50% - 20px);
+      .owl-nav{
+
+        .owlPrev, .owlNext{
+          width: 40px;
+          height: 40px;
+          background-size: cover !important;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          cursor: pointer;
+          /* z-index: 100;*/
+        }
+        .owlPrev{
+          background: url('../img/owl/arrow_left.svg') center/cover no-repeat!important;
+          /*float: left;*/
+          left: 0;
+        }
+        .owlNext{
+          background: url('../img/owl/arror_right.svg') center/cover no-repeat!important;
+          /*float: right;*/
+          right: 0;
+        }
+      }
+    }
+  }
+
+  .owl-stage{
+    display: flex;
+  }
+  .owl-item{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .owl-item img {
+    height: auto;
+      width: 60%;
+    overflow: hidden;
+    cursor: pointer;
+    object-fit: cover;
+  }
+  &__subtitle{
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: #262C40;
+    line-height: 22px;
+    padding-bottom: 0;
+    padding-top: 50px;
+    text-align: center;
+
+  }
+}

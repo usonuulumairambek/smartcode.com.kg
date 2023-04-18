@@ -1,0 +1,79 @@
+.possibility{
+  background: url("../img/possibility/possibility_bg.svg") center/cover no-repeat;
+  padding: 40px 0 40px;
+
+  &__title{
+    font-weight: 900;
+    text-transform: none!important;
+    text-align: center!important;
+    margin-bottom: 20px;
+    font-family: Roboto, sans-serif !important;
+    color: white;
+    font-size: 34px;
+  }
+  &-card{
+    box-sizing: border-box;
+
+    &__iconWrapper{
+      position: absolute;
+      top: 100px;
+      left: -22px;
+    }
+    &__iconWrapper2{
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+     }
+    &__iconWrapper3{
+      position: absolute;
+      bottom: 20px;
+      right: 0;
+    }
+  &-wrapper{
+    background: white;
+    padding: 50px 40px !important;
+    border-radius: 40px;
+    min-height: 385px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 24px rgb(43 43 43 / 16%);
+    transition: 0.2s;
+    &:hover{
+      background-color: #ffd507;
+    }
+    &__block{
+      min-height: 560px;
+    }
+
+    &__iconBox{
+      text-align: center!important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100px;
+      height: 150px;
+      img{
+        vertical-align: middle;
+        border-style: none;
+      }
+    }
+    &__title{
+      padding-top: 20px;
+      padding-bottom: 5px;
+      font-weight: 900;
+      font-size: 17px;
+      min-height: 75px;
+      margin-bottom: 0 !important;
+      text-align: center!important;
+    }
+    &__subtitle{
+      font-size: 17px;
+      line-height: 150%;
+      font-weight: 400;
+    }
+  }
+
+  }
+}

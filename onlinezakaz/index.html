@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Маркировка Бишкек | Печать этикетки честный знак на заказ">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smartcode.com.kg">
+    <meta property="og:image" content="https://smartcode.com.kg/src/img/logo.svg">
+    <meta itemprop="name" content="Услуги по маркировке товаров в Бишкеке">
+    <meta itemprop="description"
+        content="Предлагаем услуги по печати этикеток для маркетплейсов в Бишкеке (вайлдберриз, озон)">
+    <meta name="keywords" content="Маркировка Бишкек, Честный знак вайлдберриз, Печать этикеток, термопечать Бишкек">
+    <link rel="stylesheet" href="./../src/css/main.css">
+    <link rel="stylesheet" href="./../src/css/main.css">
+    <link rel="stylesheet" href="./../style.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Услуги по маркировке товаров в Бишкеке - Печать этикетки честный знак на заказ</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('form').submit(function (e) {
+                e.preventDefault(); // отменяем стандартное действие отправки формы
+                var formData = $(this).serialize(); // получаем данные формы
+                $.ajax({
+                    url: 'sendmail.php',
+                    type: 'POST',
+                    data: formData,
+                    success: function (response) {
+                        alert('Ваш запрос отправлен! Мы свяжемся с вами в ближайшее время.');
+                        $('form')[0].reset(); // очищаем форму
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        alert('Ошибка отправки запроса: ' + textStatus);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header-menu">
+            <nav class="header-menu-nav">
+                <li class="header-menu-nav__list">
+                    <a href="/">
+                        <img src="./../src/img/logo.svg" alt="logo" class="header-menu-nav__logo">
+                    </a>
+                </li>
+                <li class="header-menu-nav__list">
+                    <a href="/" class="header-menu-nav__link col-md-11">Главная</a>
+                </li>
+                <li class="header-menu-nav__list">
+                    <a href="#home" class="header-menu-nav__link col-md-11">Расходинки и принтеры
+                    </a>
+                </li>
+                <li class="header-menu-nav__list">
+                    <a href="#possibility" class="header-menu-nav__link col-md-11">Услуги
+                    </a>
+                </li>
+                <li class="header-menu-nav__list">
+                    <a href="#advantage" class="header-menu-nav__link col-md-11">Наши преимущества
+                    </a>
+                </li>
+                <li class="header-menu-nav__list">
+                    <a href="#videos" class="header-menu-nav__link col-md-11">Выполненные работы</a>
+                </li>
+                <li class="header-menu-nav__list">
+                    <a href="#oftenQuestions" class="header-menu-nav__link col-md-11">Вопросы по маркировке
+                    </a>
+                </li>
+            </nav>
+        </div>
+        <div class="burger">
+            <div class="burger__line">
+
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <h1>
+            Онлайн заказ этикеток для wildberries
+        </h1>
+        <div class="main__content">
+            <div class="login-box">
+                <h2>Скачайте тут шаблон и заполните <a href="./../Шаблон для заказа этикеток в Бишкеке.xlsx">Скачать шаблон</a> </h2>
+                <form action="./sendmail.php" method="post">
+                    <div class="user-box">
+                        <input type="text" name="name" required="">
+                        <label>Имя</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="number" name="phone" required="">
+                        <label>Номер телефона</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="file" name="file" required="">
+                        <label class="shablon">Шаблон</label>
+                    </div>
+                    <button href="#" type="submit" >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Оправить
+                    </button>
+                </form>
+            </div>
+        </div>
+
+
+
+    </main>
+    <footer class="footer" id="footer">
+        <div class="container">
+
+            <div class="footer__box">
+                <div class="col-6 offset-3 offset-md-0 col-md-2">
+                    <div class="footer-link">
+                        <a href="/">
+                            <img src="./../src/img/logo.svg" alt="logo" class="footer-link__logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 mobpadt">
+                    <a href="#header" class="footer-menu">Главная </a>
+                    <a href="#solution" class="footer-menu">Решение</a>
+                    <a href="#possibility" class="footer-menu">Все возможности</a>
+
+
+                </div>
+                <div class="col-6 col-md-2 mobpadt">
+                    <a href="#advantage" class="footer-menu">Наши преимущества</a>
+                    <a href="#videos" class="footer-menu">Зачем Маркировка</a>
+                    <a href="#oftenQuestions" class="footer-menu">Вопросы про маркировке</a>
+                    <a href="" class="footer-menu">ымывмывывм</a>
+                    <a href="" class="footer-menu">ымывмывмыв</a>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer__socialMed">
+                            Подписывайтесь на нас в соц.сетях
+                        </div>
+                        <div class="footer-socialMedLinks">
+                            <div class="footer-socialMedLinks__link">
+                                <a href="https://api.whatsapp.com/send?phone=+996501588882" target="_blank">
+                                    <img src="./../src/img/footer/wp_soc.svg" alt="" class="footer-socialMedLinks__img">
+                                </a>
+                            </div>
+                            <div class="footer-socialMedLinks__link">
+                                <a href="https://www.instagram.com/smartcode.kg" target="_blank">
+                                    <img src="./../src/img/footer/inst_soc.svg" alt=""
+                                        class="footer-socialMedLinks__img">
+                                </a>
+                            </div>
+                            <div class="footer-socialMedLinks__link">
+                                <a href="https://www.instagram.com/smartcode.kg" target="_blank">
+                                    <img src="./../src/img/footer/fb_soc.svg" alt="" class="footer-socialMedLinks__img">
+                                </a>
+                            </div>
+                            <div class="footer-socialMedLinks__link">
+                                <a href="https://www.instagram.com/smartcode.kg" target="_blank">
+                                    <img src="./../src/img/footer/tg_soc.svg" alt="" class="footer-socialMedLinks__img">
+                                </a>
+                            </div>
+                            <div class="footer-socialMedLinks__link">
+                                <a href="https://www.instagram.com/smartcode.kg" target="_blank">
+                                    <img src="./../src/img/footer/youtube_soc.svg  " alt=""
+                                        class="footer-socialMedLinks__img">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-telBox">
+
+                        <p>
+                            <a href="tel:+996709909443" class="footer-telBox__tel">
+                                <img src="./../src/img/footer/phone_ico.svg" alt="" class="footer-telBox__img">
+                                +996 709 909 443
+                                <a href="https://api.whatsapp.com/send?phone=+996709909443" target="_blank">
+                                    <img src="./../src/img/footer/wp_soc.svg" alt="" class="footer-socialMedLinks__img">
+                                </a>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="tel:+996709909443" class="footer-telBox__tel">
+                                <img src="./../src/img/footer/phone_ico.svg" alt="" class="footer-telBox__img">
+                                +996 709 909 443
+                                <a href="https://api.whatsapp.com/send?phone=+996709909443" target="_blank">
+                                    <img src="./../src/img/footer/wp_soc.svg" alt="" class="footer-socialMedLinks__img">
+                                </a>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="tel:+996709909443" class="footer-telBox__tel">
+                                <img src="./../src/img/footer/phone_ico.svg" alt="" class="footer-telBox__img">
+                                +996 709 909 443 <a href="https://api.whatsapp.com/send?phone=+996709909443"
+                                    target="_blank">
+                                    <img src="./../src/img/footer/wp_soc.svg" alt="" class="footer-socialMedLinks__img">
+                                </a>
+                            </a>
+                        </p>
+                        <p>
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay">
+        <div class="popup">
+
+        </div>
+    </div>
+    <div style="background-color: black; position: fixed; z-index: 999; width: 100%; height: 40px; bottom: 0; display: flex; align-items: center;"
+        href="https://api.whatsapp.com/send?phone=996709909443" target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=996709909443" style="display: flex">
+            &nbsp; <img src="./../src/img/footer/wp_soc.svg" alt="" class="footer-socialMedLinks__img">
+            <div style="color: white;" href="tel:+996709909443"> &nbsp; &nbsp;+996 709 909 443</div>
+        </a>
+
+
+        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="./../src/img/footer/tg_soc.svg" alt="" class="footer-socialMedLinks__img">
+        <div style="color: white;" href="https://t.me/smartcode_kg"> &nbsp; &nbsp;t.me/smartcode_kg</div>
+
+
+        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="./../src/img/footer/inst_soc.svg" alt="" class="footer-socialMedLinks__img">
+        <div style="color: white;" href="https://www.instagram.com/smartcode.kg/"> &nbsp; &nbsp;@smartcode.kg</div>
+
+    </div>
+    <script src="./../src/js/jquery.js"></script>
+    <script src="./../src/libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <script src="./../src/js/main.js"></script>
+</body>
+
+</html>

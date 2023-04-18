@@ -1,0 +1,96 @@
+.oftenQuestions{
+  padding-top: 60px;
+  background:  url(../img/qustion/qustionBg.svg ) center/cover no-repeat;
+  &__titleWrapper{
+    font-weight: 900;
+    margin-bottom: 30px;
+    text-align: center!important;
+  }
+  &__title{
+    font-family: Roboto, sans-serif !important;
+    font-size: 34px;
+    color: #262C40;
+    padding-top: 0;
+    padding-bottom: 20px;
+    font-weight: bold;
+  }
+  &-panelGroup{
+    border-radius: 2px;
+    color: black;
+    display: block;
+    font-weight: 600;
+    padding-left: 65px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    max-width: 1100px;
+    &__box1{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      background: #fff;
+      padding: -1px 25px 10px!important;
+      border-radius: 20px;
+      margin-bottom: 7px;
+      font-size: 18px;
+
+    }
+    &__icon{
+      font-size: 25px;
+      margin-left: -20px;
+      border-radius: 50% ;
+      width: 55px;
+      height: 55px;
+      background: #FFE307;
+      color: #2c3245;
+      transition: all 0.3s ease 0s;
+      border: #FFE307 solid;
+      outline: none;
+      font-weight: bold;
+      cursor: pointer;
+      .minus{
+        display: none;
+      }
+      .active{
+        display: block;
+      }
+    }
+    &__title{
+      padding-left: 40px !important;
+    }
+    &-box2{
+      max-width: 950px;
+      width: 100%;
+      align-items: center;
+      background: #fff;
+      padding: 15px 25px 10px;
+      border-radius: 20px;
+      box-shadow: 0 8px 9px 4px rgb(212 212 212 / 27%);
+      margin-left: auto;
+      display: none;
+      margin-bottom: 20px;
+
+      &__title{
+        font-family: Roboto, sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        color: #262C40;
+        margin-bottom: 20px;
+      }
+      &__listItem{
+        font-family: Roboto, sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        color: #262C40;
+        margin-bottom: 20px;
+        padding-left: 30px;
+      }
+      &__subtitle{
+        font-family: Roboto, sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        color: #262C40;
+
+      }
+    }
+  }
+}

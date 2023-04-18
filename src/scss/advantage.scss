@@ -1,0 +1,121 @@
+.advantage{
+  padding: 40px 30px;
+  position: relative;
+  background: #68758f;
+  .container{
+   /* &:before{
+      content: '';
+      display: inline-block;
+      max-width: 1140px;
+      background: #FFDD07;
+      height: 7px;
+      position: absolute;
+      top: 9%;
+      margin: 0 auto;
+    }*/
+  }
+
+  .text-center{
+    text-align: center!important;
+    margin-bottom: 20px;
+  }
+  &__title{
+    text-align: center;
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 800;
+    line-height: 1.5;
+    text-transform: inherit;
+    color: white !important;
+    background: #68758f;
+
+  }
+  h2{
+    font-family: Roboto, sans-serif !important;
+    font-size: 34px;
+   /* color: #262C40;*/
+    text-align: center;
+    z-index: 1;
+
+  }
+  &-owl{
+    &-card{
+      padding-left: 20px;
+      padding-right: 20px;
+
+
+    &__box{
+      box-sizing: border-box;
+      /*max-width: 355px;
+      max-height: 507px;*/
+    }
+    &__img{
+      padding: 0 !important;
+      margin-bottom: 20px;
+      border: 1px solid #BDBDBD;
+      border-radius: 40px;
+      box-shadow: 0 8px 24px rgb(43 43 43 / 16%);
+      background: white;
+    }
+      &__icon .w-100{
+          width: 100%!important;
+      }
+     &__title{
+       color: white;
+       font-family: Roboto, sans-serif;
+       font-weight: bold;
+       font-size: 18px;
+       margin-bottom: 10px;
+     }
+     &__subtitle{
+       font-size: 15px;
+       font-weight: 400;
+       padding-top: 10px;
+       margin-bottom: 10px;
+       min-height: 140px;
+       display: block;
+       color: white;
+     }
+  }
+  }
+  /*#owl1{
+  }
+  #owlStage{
+   !* position: relative;
+    width: 100%;
+    overflow: hidden;*!
+
+  }*/
+  .owl-carousel{
+    position: relative;
+    display: inline-block;
+    .owl-nav{
+      position: absolute;
+      width: 100%;
+      top: calc(50% - 20px);
+      .owl-prev,  .owl-next{
+        display: inline-block;
+        content: '';
+        width: 40px;
+        height: 40px;
+        background-size: cover !important;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+      .owl-prev{
+        background: url('../img/owl/arrow_left.svg') center/cover no-repeat!important;
+        float: left;
+        left: -50px;
+      }
+      .owl-next{
+        background: url('../img/owl/arror_right.svg') center/cover no-repeat!important;
+        float: right;
+        right: -50px;
+        }
+    }
+  }
+
+}

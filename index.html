@@ -1,0 +1,919 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Маркировка Бишкек | Печать этикетки честный знак на заказ">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smartcode.com.kg">
+    <meta property="og:image" content="https://smartcode.com.kg/src/img/logo.svg">
+    <meta itemprop="name" content="Услуги по маркировке товаров в Бишкеке">
+    <meta itemprop="description"
+        content="Предлагаем услуги по печати этикеток для маркетплейсов в Бишкеке (вайлдберриз, озон)">
+    <meta name="keywords" content="Маркировка Бишкек, Честный знак вайлдберриз, Печать этикеток, термопечать Бишкек">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./formjs.js"></script>
+    <link rel="icon" href="favicon.ico">
+    <title>Услуги по маркировке товаров в Бишкеке - Печать этикетки честный знак на заказ</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('form').submit(function (e) {
+                e.preventDefault(); // отменяем стандартное действие отправки формы
+                var formData = $(this).serialize(); // получаем данные формы
+                $.ajax({
+                    url: 'sendmail.php',
+                    type: 'POST',
+                    data: formData,
+                    success: function (response) {
+                        alert('Ваш запрос отправлен! Мы свяжемся с вами в ближайшее время.');
+                        $('form')[0].reset(); // очищаем форму
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        alert('Ошибка отправки запроса: ' + textStatus);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header-menu">
+            <nav class="header-menu-nav">
+                <li class="header-menu-nav__list">
+                    <img src="./src/img/logo.svg" alt="logo" class="header-menu-nav__logo">
+                </li>
+                <li class="header-menu-nav__list">
+                    <a href="/" class="header-menu-nav__link col-md-11">Главная</a>
+                </li>
+                <li class="header-menu-nav__list">
+                    <a href="#home" class="header-menu-nav__link col-md-11">Расходинки и принтеры
+                    </a>
+                </li>
+                <li class="header-menu-nav__list">
+                    <a href="#possibility" class="header-menu-nav__link col-md-11">Услуги
+                    </a>
+                </li>
+                <li class="header-menu-nav__list">
+                    <a href="#advantage" class="header-menu-nav__link col-md-11">Наши преимущества
+                    </a>
+                </li>
+                <li class="header-menu-nav__list">
+                    <a href="#videos" class="header-menu-nav__link col-md-11">Выполненные работы</a>
+                </li>
+                <li class="header-menu-nav__list">
+                    <a href="#oftenQuestions" class="header-menu-nav__link col-md-11">Вопросы по маркировке
+                    </a>
+                </li>
+            </nav>
+        </div>
+        <div class="burger">
+            <div class="burger__line">
+
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <section class="home" id="home">
+            <div class="container">
+                <div class="home-slider">
+                    <div class="home-slider-wrapper1 col-md-6">
+                        <h1 class="title">
+                            Профессиональная маркировка товаров в Бишкеке
+                        </h1>
+                        <p class="home-slider-wrapper1__subtitle">
+                            Наша команда предоставляет качественные услуги по маркировке товаров в Бишкеке.
+                        </p>
+                        <a href="onlinezakaz/index.html">Онлайн заказ</a>
+                    </div>
+                    <div class="main__footer">
+                        <div class="login-box">
+                            <h2>Отравить заявку</h2>
+                            <form action="./sendmail.php" method="post">
+                                <div class="user-box">
+                                    <input type="text" name="text" required="">
+                                    <label>Имя</label>
+                                </div>
+                                <div class="user-box">
+                                    <input type="number" name="number" required="">
+                                    <label>Номер телефона</label>
+                                </div>
+                                <button href="#">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Оправить
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="solution" id="solution">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="solution__title">Для кого наши услуги?</h2>
+                    </div>
+                </div>
+
+                <div class="home-box row">
+                    <div class="home-box__Btn">
+                        <a href="#" class="home-box__link">
+                            <img src="./src/img/home/p1.svg" alt="">
+                            <h4 class="home-box__title">Производители</h4>
+                        </a>
+                    </div>
+                    <div class="home-box__Btn">
+                        <a href="#" class="home-box__link">
+                            <img src="./src/img/home/p2.svg" alt="">
+                            <h4 class="home-box__title">Импортеры</h4>
+                        </a>
+                    </div>
+                    <div class="home-box__Btn">
+                        <a href="#" class="home-box__link">
+                            <img src="./src/img/home/p3.svg" alt="">
+                            <h4 class="home-box__title">Оптовики</h4>
+                        </a>
+                    </div>
+                    <div class="home-box__Btn">
+                        <a href="./marketplace/index.html" class="home-box__link">
+                            <img src="./src/img/home/p4.svg" alt="">
+                            <h4 class="home-box__title">Поставщики Marketplace</h4>
+                        </a>
+                    </div>
+                    <div class="home-box__Btn">
+                        <a href="#" class="home-box__link">
+                            <img src="./src/img/home/p5.svg" alt="">
+                            <h4 class="home-box__title">Розница</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="possibility" id="possibility">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="possibility__title">Доверься профессионалам</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-10 offset-1 offset-md-0 possibility-card">
+                        <img src="./src/img/possibility/card1.svg" alt="" class="possibility-card__iconWrapper">
+                        <div class="possibility-card-wrapper">
+                            <div class="possibility-card-wrapper__block">
+                                <div class="possibility-card-wrapper__iconBox">
+                                    <img src="./src/img/possibility/icon1.svg" alt="">
+                                </div>
+                                <h4 class="possibility-card-wrapper__title">
+                                    Принимаем заказ</h4>
+                                <p class="possibility-card-wrapper__subtitle">Принимаем заказ в течение 15-20минут через
+                                    наш сайт, WhatsApp, Telegram и по телефону: +996709909443</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-10 offset-1 offset-md-0 possibility-card">
+                        <div class="possibility-card-wrapper">
+                            <div class="possibility-card-wrapper__block">
+                                <div class="possibility-card-wrapper__iconBox">
+                                    <img src="./src/img/possibility/card2.svg" alt="">
+                                </div>
+                                <h4 class="possibility-card-wrapper__title">Печать</h4>
+                                <p class="possibility-card-wrapper__subtitle">Этикетки печатаем на термо и
+                                    термотрансферном принтере.&nbsp; &nbsp; После создание шаблона проверяем штрих-код и
+                                    qr код на работоспособность.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-10 offset-1 offset-md-0 possibility-card">
+                        <img src="./src/img/possibility/icon2.svg" alt="" class="possibility-card__iconWrapper2">
+                        <div class="possibility-card-wrapper">
+                            <div class="possibility-card-wrapper__block">
+                                <div class="possibility-card-wrapper__iconBox">
+                                    <img src="./src/img/possibility/card3.svg" alt="">
+                                </div>
+                                <h4 class="possibility-card-wrapper__title">
+                                    Доставка</h4>
+                                <p class="possibility-card-wrapper__subtitle">
+                                    Самый быстрый способ доставки в Бишкеке это - передача через такси. Стоимость от
+                                    100сом до 250сом. В любой точки Бишкека можно доставить за 1час</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-10 offset-1 offset-md-0 possibility-card">
+                        <img src="./src/img/possibility/icon3.svg" alt="" class="possibility-card__iconWrapper3">
+                        <div class="possibility-card-wrapper">
+                            <div class="possibility-card-wrapper__block">
+                                <div class="possibility-card-wrapper__iconBox">
+                                    <img src="./src/img/possibility/card4.svg" alt="">
+                                </div>
+                                <h4 class="possibility-card-wrapper__title">
+                                    Оплата</h4>
+                                <p class="possibility-card-wrapper__subtitle">
+                                    Оплату принимаем на: Мбанк,&nbsp; &nbsp; О!Деньги, На баланс телефона, Сбербанк,
+                                    Тинькофф.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-10 offset-1 offset-md-0 possibility-card">
+                        <img src="./src/img/possibility/icon4.svg" alt="" class="possibility-card__iconWrapper3">
+                        <div class="possibility-card-wrapper">
+                            <div class="possibility-card-wrapper__block">
+                                <div class="possibility-card-wrapper__iconBox">
+                                    <img src="./src/img/possibility/card5.svg" alt="">
+                                </div>
+                                <h4 class="possibility-card-wrapper__title">
+                                    Интеграции
+                                </h4>
+                                <p class="possibility-card-wrapper__subtitle">
+                                    Честный Знак (СУЗ, ГИС МТ), Национальный каталог,
+                                    GS1, ЭДО, Удостоверяющие центры и обмен данными с 1С
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-10 offset-1 offset-md-0 possibility-card">
+                        <div class="possibility-card-wrapper">
+                            <div class="possibility-card-wrapper__block">
+                                <div class="possibility-card-wrapper__iconBox">
+                                    <img src="./src/img/possibility/card6.svg" alt="">
+                                </div>
+                                <h4 class="possibility-card-wrapper__title">
+                                    Управление торговлей
+                                </h4>
+                                <p class="possibility-card-wrapper__subtitle">
+                                    Закупки, продажи, возвраты,
+                                    сделки с юридическими и физическими
+                                    лицами, передача и получение маркированного
+                                    товара по агентской и комиссионной схеме
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantage" id="advantage">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="advantage__title">Наши преимущества</h2>
+                    </div>
+                </div>
+                <div class="row flex-center">
+                    <div class="owl-carousel owl-theme owl-loaded" id="owl">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage" id="owlStage">
+                                <div class="owl-item col-md-4 col-lg-4 w-100">
+                                    <div class="advantage-owl-card text-center">
+                                        <div class="advantage-owl-card__box">
+                                            <div class="advantage-owl-card__img">
+                                                <img src="./src/img/advantage/img.png" alt=""
+                                                    class="advantage-owl-card__icon">
+                                            </div>
+                                            <h4 class="advantage-owl-card__title">
+                                                Интеграция с Честным Знаком
+                                            </h4>
+                                            <p class="advantage-owl-card__subtitle">
+                                                Автоматический импорт товаров и
+                                                кодов маркировки в систему GetMark
+                                                из Честного Знака (с созданием карточек товаров).
+                                                Разделение кодов маркировки по статусам
+                                                (полученные вне системы GetMark делятся на статусы:
+                                                не в обороте, в обороте и архив.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="owl-item col-md-4 col-lg-4 w-100">
+                                    <div class="advantage-owl-card text-center">
+                                        <div class="advantage-owl-card__box">
+                                            <div class="advantage-owl-card__img">
+                                                <img src="./src/img/advantage/img1.png" alt="">
+                                            </div>
+                                            <h4 class="advantage-owl-card__title">
+                                                Массовый заказ и печать кодов маркировки
+                                            </h4>
+                                            <p class="advantage-owl-card__subtitle">
+                                                Вне зависимости от ограничений
+                                                Честного Знака (10 GTIN + 150 000
+                                                кодов маркировки на 1 GTIN).
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="owl-item col-md-4 col-lg-4">
+                                    <div class="advantage-owl-card text-center">
+                                        <div class="advantage-owl-card__box">
+                                            <div class="advantage-owl-card__img">
+                                                <img src="./src/img/advantage/img2.png" alt="">
+                                            </div>
+                                            <h4 class="advantage-owl-card__title">
+                                                Доступно на всех устройствах
+                                            </h4>
+                                            <p class="advantage-owl-card__subtitle">
+                                                Приложение можно использовать как на телефоне, так и на компьютере или
+                                                планшете. Вы можете скачать БЕСПЛАТНОЕ приложение для смартфонов
+                                                (Android и iOS), есть все необходимое для работы с маркированным товаром
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="owl-item col-md-4 col-lg-4">
+                                    <div class="advantage-owl-card text-center">
+                                        <div class="advantage-owl-card__box">
+                                            <div class="advantage-owl-card__img">
+                                                <img src="./src/img/advantage/img3.png" alt="">
+                                            </div>
+                                            <h4 class="advantage-owl-card__title">
+                                                Разграничение прав доступа
+                                            </h4>
+                                            <p class="advantage-owl-card__subtitle">
+                                                Например, кладовщику открываете доступ к складам,
+                                                менеджеру – к заказам и контрагентам,
+                                                а бухгалтеру – право подписи документов в системе.
+                                                Все действия персонала в программе
+                                                фиксируются в журнале действий
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="owl-item col-md-4 col-lg-4">
+                                    <div class="advantage-owl-card text-center">
+                                        <div class="advantage-owl-card__box">
+                                            <div class="advantage-owl-card__img">
+                                                <img src="./src/img/advantage/img4.png" alt="">
+                                            </div>
+                                            <h4 class="advantage-owl-card__title">
+                                                Техническая поддержка
+                                            </h4>
+                                            <p class="advantage-owl-card__subtitle">
+                                                Наши специалисты оперативно ответят на все ваши
+                                                вопросы в случае возникновения проблем у вас или
+                                                ваших сотрудников. Также мы готовы предоставить
+                                                вам персонального менеджера
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="owl-item col-md-4 col-lg-4">
+                                    <div class="advantage-owl-card text-center">
+                                        <div class="advantage-owl-card__box">
+                                            <div class="advantage-owl-card__img">
+                                                <img src="./src/img/advantage/img5.png" alt="">
+                                            </div>
+                                            <h4 class="advantage-owl-card__title">
+                                                Мобильный УКЭП
+                                            </h4>
+                                            <p class="advantage-owl-card__subtitle">
+                                                Подписывайте юридически значимые документы прямо с телефона.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-nav">
+                            <div class="owl-prev"></div>
+                            <div class="owl-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="videos" id="videos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="videos-title">
+                            Зачем маркировка предпринимателям и покупателям?
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="videos-videosSlider">
+
+                            <div class="owl-carousel owl-theme owl-loaded videosSlider" id="videosSlider">
+                                <div class=" videos-videosSlider__bgBox">
+                                    <div class="owl-stage-outer ">
+                                        <div class="owl-stage ">
+                                            <div class="wrapper">
+                                                <div class="owl-item">
+                                                    <img src="./src/img/videos/video1.png" alt=""
+                                                        class="videos-videosSlider__img">
+                                                </div>
+
+                                            </div>
+                                            <div class="wrapper">
+                                                <div class="owl-item">
+                                                    &lt;!&ndash;
+
+                                                    &ndash;&gt;
+                                                    <img src="./src/img/videos/video2.png" alt=""
+                                                        class="videos-videosSlider__img">
+                                                </div>
+
+                                            </div>
+                                            &lt;!&ndash;<div class="wrapper">
+                                                <div class="owl-item">
+                                                    <img src="./src/img/videos/video2.png" alt=""
+                                                        class="videos-videosSlider__img">
+                                                </div>
+                                            </div>&ndash;&gt;
+
+                                        </div>
+
+                                        <div class="owl-nav">
+                                            <div class="owlPrev"></div>
+                                            <div class="owlNext"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="videos__subtitle">Если остались вопросы - просто закажите бесплатную
+                            консультацию. Мы с удовольствием расскажем, как
+                            работает маркировка и постараемся помочь.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="oftenQuestions" id="oftenQuestions">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 oftenQuestions__titleWrapper">
+                        <h2 class="oftenQuestions__title">Часто задаваемые вопросы по маркировке</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="" alt="">
+                            <div class="oftenQuestions-panelGroup">
+                                <div class="question">
+                                    <div class="oftenQuestions-panelGroup__box1">
+                                        <button class="oftenQuestions-panelGroup__icon">
+
+                                            <i class="fas fa-plus plus"></i>
+                                            <i class="fas fa-minus minus "></i>
+                                        </button>
+                                        <h4 class="oftenQuestions-panelGroup__title">
+                                            Сколько будет стоить интеграция системы маркировки?
+                                        </h4>
+                                    </div>
+                                    <div class="oftenQuestions-panelGroup-box2">
+                                        <h5 class="oftenQuestions-panelGroup-box2__title"> Организация процесса
+                                            маркировки одежды потребует дополнительных издержек. Возникнут затраты на
+                                            запуск взаимодействия с «Честный Знак», покупку оборудования, доработку
+                                            программ и автоматизацию процесса. Смета будет отличаться для конкретной
+                                            компании, но в любом случае появятся расходы на:</h5>
+                                        <ul class="oftenQuestions-panelGroup-box2__listItem">
+                                            <li>Выпуск УКЭП — для любого участника рынка подпись стоит до 3000 рублей,
+                                                оформите одну на компанию или свою для каждого сотрудника.</li>
+                                            <li>Принтер этикетки для печати кодов — тут можно выбрать доступные цены,
+                                                обращайте внимание на производительность принтера, чтобы не задерживать
+                                                работу скоростью печати.</li>
+                                            <li> Сканер для считывания 2D кодов — количество единиц зависит от ваших
+                                                процессов. Например, пользователям ГетМарк вообще не потребуется сканер,
+                                                приложение на смартфоне его заменит.</li>
+                                            <li> Рознице потребуется срочно закупить или обновить онлайн-кассу.</li>
+                                            <li>Выпуск Data Matrix — стоит 50 копеек за код без налога.</li>
+                                            <li>ЭДО — обойдется компании в небольшую сумму, точная стоимость услуги
+                                                формируется из количества документов.</li>
+                                            <li>Этикетки для печати Data Matrix и нанесения на товар — для производителя
+                                                и импортера объем расходов будет значительным.</li>
+                                            <li>Возможны расходы за передачу кодов маркировки. Операторы касс в ряде
+                                                случаев выставляют доплату.</li>
+                                        </ul>
+                                        <p class="oftenQuestions-panelGroup-box2__subtitle">Система маркировки товаров
+                                            не станет вашим кошмаром — мы окажем необходимую помощь. Заказать расчет
+                                            стоимости интеграции сервиса маркировки в ваши бизнес-процессы вы можете у
+                                            наших менеджеров.</p>
+
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="oftenQuestions-panelGroup__box1">
+                                        <button class="oftenQuestions-panelGroup__icon">
+
+                                            <i class="fas fa-plus"></i>
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <h4 class="oftenQuestions-panelGroup__title">
+                                            Кто является оператором системы маркировки товаров?
+                                        </h4>
+                                    </div>
+                                    <div class="oftenQuestions-panelGroup-box2">
+
+                                        В декабре 2017 года Владимир Путин одобрил решение о создании единой системы
+                                        контроля движения товара. В качестве оператора маркировки товаров распоряжением
+                                        Правительства выбран ЦРПТ - Центр развития перспективных технологий.
+                                        <br>
+                                        <br>
+                                        Именно ЦРПТ создал и развивает национальную систему маркировки «Честный Знак»,
+                                        которая фиксирует все данные о движении товаров и регистрирует действия
+                                        участников
+                                        рынка. Система маркировки продукции «Честный Знак» имеет соглашение с
+                                        ассоциацией
+                                        производителей и импортеров GS1 RUS и использует их базу данных товаров со
+                                        штрихкодами в качестве основы для Национального каталога маркировки. Такое
+                                        решение
+                                        позволило упростить работу и вводить данные только в систему Юнискан.
+                                        <br>
+                                        <br>
+
+                                        Программное решение GetMark проверено ЦРПТ и включено в список партнеров для
+                                        интеграции с системой «Честный Знак». Наша система позволит работать с
+                                        маркировкой и
+                                        учитывать товары в рамках одного интерфейса, не переходя в личный кабинет
+                                        «Честный
+                                        Знак». Cервис ГетМарк автоматизирует процесс и позволит легко перейти к
+                                        обязательной
+                                        маркировке.
+
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="oftenQuestions-panelGroup__box1">
+                                        <button class="oftenQuestions-panelGroup__icon">
+
+                                            <i class="fas fa-plus"></i>
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <h4 class="oftenQuestions-panelGroup__title">
+                                            Есть ли плюсы для бизнеса от системы маркировки Честный ЗНАК?
+                                        </h4>
+                                    </div>
+                                    <div class="oftenQuestions-panelGroup-box2">
+                                        <p>
+                                            Для начала поясним для чего была введена обязательная маркировка товаров
+                                            правительством Российской Федерации. Организация регистрации движения всех
+                                            товаров в
+                                            «Честный Знак» позволит сократить контрафактный товарооборот и «обелить»
+                                            рынок, а
+                                            также увеличить собираемость налогов за счёт прозрачности документооборота.
+                                            <br>
+                                            <br>
+                                            Но преимущества от системы маркировки получит и предприниматель:
+                                            Организации,
+                                            работающие «в белую», получат преимущества, ведь штрафы и изъятие
+                                            немаркированных
+                                            товаров не позволят торговать неплательщикам налогов. Сократится объем
+                                            контрафакта и
+                                            серой продукции, от чего выиграют производители и импортеры качественных
+                                            товаров.
+                                            Появится возможность перестроить процессы и оптимизировать логистику. Данные
+                                            о
+                                            движении Data Matrix можно использовать для анализа цепочки поставок и
+                                            складских
+                                            запасов и построения прогнозных моделей для производства. Регулирует
+                                            процедуру и
+                                            правила маркировки Постановление от 26 апреля 2019 № 515.
+
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="oftenQuestions-panelGroup__box1">
+                                        <button class="oftenQuestions-panelGroup__icon">
+
+                                            <i class="fas fa-plus"></i>
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <h4 class="oftenQuestions-panelGroup__title">
+                                            Возможно ли заказать настройку системы маркировки “под ключ”?
+                                        </h4>
+                                    </div>
+                                    <div class="oftenQuestions-panelGroup-box2">
+                                        Да, у ЧестногоЗнака есть услуга настройки системы маркировки “под ключ” для
+                                        представителей
+                                        бизнеса: юридических лиц и индивидуальных предпринимателей. Чтобы купить услугу
+                                        и
+                                        запросить прайс, свяжитесь с нашими специалистами по телефону +996 501 588 882.
+
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="oftenQuestions-panelGroup__box1">
+                                        <button class="oftenQuestions-panelGroup__icon">
+
+                                            <i class="fas fa-plus"></i>
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <h4 class="oftenQuestions-panelGroup__title">
+
+                                            Мой бизнес не в Москве, можно ли подключить вашу систему в регионе?
+
+                                        </h4>
+                                    </div>
+                                    <div class="oftenQuestions-panelGroup-box2">
+                                        Конечно! Приобрести программное решение GetMark может любой предприниматель,
+                                        независимо от региона работы. Чтобы подключить систему, достаточно связаться со
+                                        специалистами по телефону +996 501 588 882.
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="oftenQuestions-panelGroup__box1">
+                                        <button class="oftenQuestions-panelGroup__icon">
+
+                                            <i class="fas fa-plus"></i>
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <h4 class="oftenQuestions-panelGroup__title">
+                                            Какое оборудование нужно для учета маркированной одежды и белья?
+                                        </h4>
+                                    </div>
+                                    <div class="oftenQuestions-panelGroup-box2">
+                                        Программа GetMark имеет полный функционал для работы с маркировкой, в том числе
+                                        и
+                                        для маркировки остатков. Кроме web версии, наш сервис имеет бесплатное мобильное
+                                        приложение для Android и IOS, которое позволит обойтись без 2D сканера и ТСД.
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="oftenQuestions-panelGroup__box1">
+                                        <button class="oftenQuestions-panelGroup__icon">
+
+                                            <i class="fas fa-plus"></i>
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <h4 class="oftenQuestions-panelGroup__title">
+                                            Чем полезен сервис маркировки товаров GetMark?
+                                        </h4>
+                                    </div>
+                                    <div class="oftenQuestions-panelGroup-box2">
+                                        <p>
+                                            Наш сервис является официальным партнером ЦРПТ - оператора маркировки,
+                                            разработавшего систему «Честный Знак». Система ГетМарк упрощает и
+                                            автоматизирует
+                                            документооборот, берет на себя работу с маркировкой и обмен информацией с
+                                            «Честный
+                                            Знак». </p>
+                                        <li>автоматизирует систему маркировки и встроит ее в учет товарных остатков,
+                                        </li>
+                                        <li>позволит делать массовый заказ кодов маркировки и вводить их в оборот,</li>
+                                        <li>даст возможность объединять коды Data Matrix в единый код-агрегат,</li>
+                                        <li>поможет нанести коды маркировки на продукцию, сохранив фирменный стиль.</li>
+                                        <br>
+                                        <br>
+                                        <b>GetMark - для оптовых поставщиков и дистрибьюторов</b>
+                                        <li>упростит работу за счет автоматизации создания поступлений и заказов на
+                                            приемку,</li>
+                                        <li>поможет избежать ошибок с помощью проверки на пересорт, </li>
+                                        <li>позволит сканировать товары с помощью телефона при приемке, отгрузке и
+                                            сверке кодов
+                                            маркировки,</li>
+                                        <li>облегчит взаимодействие с транспортными компаниями за счет агрегации
+                                            цифровых кодов
+                                            в логистическую упаковку.</li>
+                                        <br>
+                                        <br>
+                                        <b>GetMark - для розничных ритейлеров и интернет-магазинов</b>
+                                        <li>является готовым решением, с которым легко запустить маркировку, </li>
+                                        <li>имеет простой интерфейс, который не нужно долго изучать, он понятен
+                                            интуитивно,
+                                        </li>
+                                        <li>дает возможность управлять бизнесом с мобильного телефона,</li>
+                                        <li>позволит обойтись без 2D сканера и ТСД.</li>
+                                        <br>
+                                        <br>
+
+                                        Помимо перечисленных преимуществ, которые указаны на странице, наша система
+                                        маркировки
+                                        товаров доступна в бесплатном мобильном приложении.
+
+
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="oftenQuestions-panelGroup__box1">
+                                        <button class="oftenQuestions-panelGroup__icon">
+
+                                            <i class="fas fa-plus"></i>
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <h4 class="oftenQuestions-panelGroup__title">
+                                            Какое наказание предусмотрено за нарушение закона о маркировке?
+                                        </h4>
+                                    </div>
+                                    <div class="oftenQuestions-panelGroup-box2">
+                                        <p>
+                                            Административное наказание (КоАП РФ Статья 15.12):
+                                        </p>
+                                        <li>От 2 000 до 4 000 рублей для физических лиц</li>
+                                        <li>От 5 000 до 10 000 рублей для должностных лиц</li>
+                                        <li>От 50 000 до 300 000 рублей для компаний</li>
+                                        А также обязательная конфискация товара.
+                                        <br>
+                                        <br>
+                                        Уголовное наказание (УК РФ Статья 171.1.):
+                                        <li>Штраф от 1,5 миллионов рублей</li>
+                                        <li>Принудительные работы до 3-х лет</li>
+                                        <li>Лишение свободы до 3-х лет со штрафом</li>
+
+                                        Изменения внесены федеральным законом от 18.07.2011 N 237-ФЗ и от 31.12.2014 N
+                                        530-ФЗ.
+
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="oftenQuestions-panelGroup__box1">
+                                        <button class="oftenQuestions-panelGroup__icon">
+
+                                            <i class="fas fa-plus"></i>
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <h4 class="oftenQuestions-panelGroup__title">
+                                            Какая подпись понадобится для работы с системой Честный ЗНАК?
+                                        </h4>
+                                    </div>
+                                    <div class="oftenQuestions-panelGroup-box2">
+                                        <p>
+                                            Для создания личного кабинета в «Честный Знак» и дальнейшей работы: заказа
+                                            Data
+                                            Matrix, ввода и вывода изделий из оборота, необходимо получить криптоподпись
+                                            усовершенствованную и квалифицированную. Выдают УКЭП специальные
+                                            удостоверяющие
+                                            центры.
+                                            <br>
+                                            <br>
+                                            Основное отличие от обычной ЭЦП в том, что в момент подписания документа
+                                            создается
+                                            метка времени и записывается информация о действительности сертификата. УКЭП
+                                            записывается на электронный носитель и подписанные ей электронные документы
+                                            приобретают юридическую силу.
+                                            <br>
+                                            <br>
+
+                                            Также в приложении GetMark предусмотрена мобильная электронная подпись. Её
+                                            можно
+                                            получить бесплатно. Подпись хранится прямо на вашем смартфоне. Это удобно и
+                                            безопасно.
+
+                                        </p>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="container">
+
+            <div class="footer__box">
+                <div class="col-6 offset-3 offset-md-0 col-md-2">
+                    <div class="footer-link">
+                        <a href="/">
+                            <img src="./src/img/logo.svg" alt="logo" class="footer-link__logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 mobpadt">
+                    <a href="#header" class="footer-menu">Главная </a>
+                    <a href="#solution" class="footer-menu">Решение</a>
+                    <a href="#possibility" class="footer-menu">Все возможности</a>
+
+
+                </div>
+                <div class="col-6 col-md-2 mobpadt">
+                    <a href="#advantage" class="footer-menu">Наши преимущества</a>
+                    <a href="#videos" class="footer-menu">Зачем Маркировка</a>
+                    <a href="#oftenQuestions" class="footer-menu">Вопросы про маркировке</a>
+                    <a href="" class="footer-menu">ымывмывывм</a>
+                    <a href="" class="footer-menu">ымывмывмыв</a>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer__socialMed">
+                            Подписывайтесь на нас в соц.сетях
+                        </div>
+                        <div class="footer-socialMedLinks">
+                            <div class="footer-socialMedLinks__link">
+                                <a href="https://api.whatsapp.com/send?phone=+996501588882" target="_blank">
+                                    <img src="./src/img/footer/wp_soc.svg" alt="" class="footer-socialMedLinks__img">
+                                </a>
+                            </div>
+                            <div class="footer-socialMedLinks__link">
+                                <a href="https://www.instagram.com/smartcode.kg" target="_blank">
+                                    <img src="./src/img/footer/inst_soc.svg" alt="" class="footer-socialMedLinks__img">
+                                </a>
+                            </div>
+                            <div class="footer-socialMedLinks__link">
+                                <a href="https://www.instagram.com/smartcode.kg" target="_blank">
+                                    <img src="./src/img/footer/fb_soc.svg" alt="" class="footer-socialMedLinks__img">
+                                </a>
+                            </div>
+                            <div class="footer-socialMedLinks__link">
+                                <a href="https://www.instagram.com/smartcode.kg" target="_blank">
+                                    <img src="./src/img/footer/tg_soc.svg" alt="" class="footer-socialMedLinks__img">
+                                </a>
+                            </div>
+                            <div class="footer-socialMedLinks__link">
+                                <a href="https://www.instagram.com/smartcode.kg" target="_blank">
+                                    <img src="./src/img/footer/youtube_soc.svg  " alt=""
+                                        class="footer-socialMedLinks__img">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-telBox">
+                       
+                        <p>
+                            <a href="tel:+996709909443" class="footer-telBox__tel">
+                                <img src="./src/img/footer/phone_ico.svg" alt="" class="footer-telBox__img">
+                                +996 709 909 443
+                                <a href="https://api.whatsapp.com/send?phone=+996709909443" target="_blank">
+                                    <img src="./src/img/footer/wp_soc.svg" alt="" class="footer-socialMedLinks__img">
+                                </a>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="tel:+996709909443" class="footer-telBox__tel">
+                                <img src="./src/img/footer/phone_ico.svg" alt="" class="footer-telBox__img">
+                                +996 709 909 443
+                                <a href="https://api.whatsapp.com/send?phone=+996709909443" target="_blank">
+                                    <img src="./src/img/footer/wp_soc.svg" alt="" class="footer-socialMedLinks__img">
+                                </a>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="tel:+996709909443" class="footer-telBox__tel">
+                                <img src="./src/img/footer/phone_ico.svg" alt="" class="footer-telBox__img">
+                                +996 709 909 443 <a href="https://api.whatsapp.com/send?phone=+996709909443"
+                                    target="_blank">
+                                    <img src="./src/img/footer/wp_soc.svg" alt="" class="footer-socialMedLinks__img">
+                                </a>
+                            </a>
+                        </p>
+                        <p>
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay">
+        <div class="popup">
+
+        </div>
+    </div>
+    <div style="background-color: black; position: fixed; z-index: 999; width: 100%; height: 40px; bottom: 0; display: flex; align-items: center;"
+        href="https://api.whatsapp.com/send?phone=996709909443" target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=996709909443" style="display: flex">
+            &nbsp; <img src="./src/img/footer/wp_soc.svg" alt="" class="footer-socialMedLinks__img">
+            <div style="color: white;" href="tel:+996709909443"> &nbsp; &nbsp;+996 709 909 443</div>
+        </a>
+
+
+        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="./src/img/footer/tg_soc.svg" alt="" class="footer-socialMedLinks__img">
+        <div style="color: white;" href="https://t.me/smartcode_kg"> &nbsp; &nbsp;t.me/smartcode_kg</div>
+
+
+        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="./src/img/footer/inst_soc.svg" alt="" class="footer-socialMedLinks__img">
+        <div style="color: white;" href="https://www.instagram.com/smartcode.kg/"> &nbsp; &nbsp;@smartcode.kg</div>
+
+    </div>
+
+    <script src="./src/js/jquery.js"></script>
+    <script src="./src/libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>

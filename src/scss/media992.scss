@@ -1,0 +1,107 @@
+@mixin line {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  transition: 0.5s;
+}
+  @media (max-width: 992px) {
+    .header{
+
+    }
+    .header-menu-nav__link {
+      font-size: 20px;
+    }
+    .oftenQuestions-panelGroup__title {
+      padding-left: 20px !important;
+    }
+    .header-menu {
+      display: inline-block;
+    }
+    .header-menu-nav {
+      /*display: inline-block;
+      text-align: left;*/
+      &.active {
+        display: flex;
+        flex-direction: column !important;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 50%;
+        background-image: linear-gradient(11deg, rgb(86, 82, 204) 0%, rgb(128, 125, 251) 100%);
+        z-index: 5;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+      }
+    }
+    .header-menu-nav__list {
+      display: none;
+      padding: 5px 0;
+      text-align: left;
+
+      &.active {
+        display: inline-block;
+      }
+    }
+    .burger {
+      position: fixed;
+      width: 30px;
+      height: 30px;
+      z-index: 5;
+      top: 12px;
+      right: 15px;
+      cursor: pointer;
+
+      &.active {
+        .burger__line {
+          background: none;
+
+          &::before {
+            transform: rotate(45deg);
+            top: 0;
+            background: #ffd507;;
+          }
+
+          &::after {
+            transform: rotate(-45deg);
+            bottom: 0;
+            background: #ffd507;;
+          }
+        }
+      }
+
+      &__line {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 4px;
+        background: #000000;
+        transform: translateY(-50%);
+        transition: 0.5s;
+
+        &::before {
+          @include line;
+          top: -10px;
+        }
+
+        &::after {
+          @include line;
+          bottom: -10px;
+
+        }
+      }
+    }
+    .advantage .owl-carousel .owl-nav .owl-prev{
+      left: -20px;
+    }
+    .advantage .owl-carousel .owl-nav .owl-next{
+      right: -20px;
+    }
+    .videos .owl-item img {
+      width: 100%;
+    }
+  }

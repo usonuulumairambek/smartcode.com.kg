@@ -1,0 +1,53 @@
+
+@media (max-width: 576px) {
+  .header-menu-nav__link{
+    font-size: 12px;
+  }
+  .title {
+    font-size: 30px;
+    padding-top: 15px;
+  }
+  .oftenQuestions-panelGroup__box1{
+    max-width: 500px;
+    width: 100%;
+  }
+  .advantage .owl-carousel .owl-nav .owl-prev{
+    left: -10px;
+  }
+  .advantage .owl-carousel .owl-nav .owl-next{
+    right: -10px;
+  }
+  .owl-item img {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .videos .owl-item img{
+    width: 100%;
+  }
+
+  .oftenQuestions-panelGroup__title{
+    padding-left: 20px!important;
+    font-size: 13px;
+  }
+  .oftenQuestions-panelGroup{
+    padding-left: 20px;
+  }
+  .oftenQuestions-panelGroup-box2{
+    max-width: 500px;
+    width: 100%;
+    margin-left: initial;
+    font-size: 12px;
+  }
+  .oftenQuestions-panelGroup__icon{
+    width: 30px;
+    height: 30px;
+    margin-left: -4px;
+  }
+
+  .solution h2, .possibility__title, .advantage h2, .videos h2, .videos h2, .oftenQuestions__title {
+    font-size: 20px;
+    display: block;
+  }
+}

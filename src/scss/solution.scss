@@ -1,0 +1,33 @@
+.solution{
+  padding: 40px 0;
+  .text-center{
+    text-align: center!important;
+  }
+  &__title{
+    text-align: center;
+    background: white;
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 800;
+    line-height: 1.5;
+    text-transform: inherit;
+    &:before{
+      content: '';
+      display: inline-block;
+      width: 100%;
+      left: 0;
+      background: #C34EFF;
+      height: 7px;
+      position: absolute;
+      top: 44%;
+      z-index: -1;
+    }
+  }
+  h2{
+    font-family: Roboto, sans-serif !important;
+    font-size: 34px;
+    color: #262C40;
+    text-align: center;
+  }
+}
